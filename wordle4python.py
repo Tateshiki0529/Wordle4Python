@@ -69,8 +69,16 @@ class Wordle4Python:
 				output.append({
 					'char': guess_char,
 					'match': True,
-					'include': (guess_char_count[guess_char] <= char_count[guess_char])
+					'include': True
 				})
+				output_tmp = []
+				for output_char in output:
+					output_tmp.append({
+						'char': output_char['char'],
+						'match': output_char['match'],
+						'include': (guess_char_count[guess_char] <= char_count[guess_char])
+					})
+				output = output_tmp
 				match_count += 1
 			elif guess_char in char_list and char_list[index] != guess_char: # 含む (場所は違う)
 				guess_char_count[guess_char] = guess_char_count.get(guess_char, 0) + 1
