@@ -6,4 +6,4 @@
 - [x] 一般的な単語リストのインポート (https://github.com/Tateshiki0529/Wordle4Python/pull/1)
 
 ## W.I.P.
-- [ ] Discordプラグイン化
+- [ ] Discordプラグイン化 (https://github.com/Tateshiki0529/Wordle4Python/tree/discord-plugin)
